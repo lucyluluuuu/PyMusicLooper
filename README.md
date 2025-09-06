@@ -20,7 +20,11 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 - Then run this long commmand all at once in powershell
 - Make sure your powershell is elevated aka Run as administrator 
 - Run these commands from wherever you want to install pymusiclooper 
-- i.e. run cd C:\Users\"YourUsernameHere"\Documents\pymusiclooper in powershell BEFORE running the command below 
+- i.e. run this
+```sh 
+cd C:\Users\"YourUsernameHere"\Documents\pymusiclooper in powershell BEFORE running the command below 
+```
+
 ```sh
 choco install ffmpeg-full python git -y ; refreshenv ; pip install yt-dlp --upgrade build hatchling ; git clone https://github.com/lucyluluuuu/PyMusicLooper.git ; cd PyMusicLooper ; python -m build ; pip install --force-reinstall dist/pymusiclooper-*.whl
 ```
