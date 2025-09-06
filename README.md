@@ -7,35 +7,35 @@ The following software must be installed for `pymusiclooper` to function correct
 
 ## Installation
 
-<pre> First install Chocolatey with this powershell command </pre>
-<pre> Make sure your powershell is elevated aka Run as administrator </pre>
+- First install Chocolatey with this powershell command 
+- Make sure your powershell is elevated aka Run as administrator 
 ```sh
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 ```
-<pre> Then run this long commmand all at once in powershell </pre>
-<pre> Make sure your powershell is elevated aka Run as administrator </pre>
-<pre> Run these commands from wherever you want to install pymusiclooper </pre>
-<pre> i.e. run cd C:\Users\"YourUsernameHere"\Documents\pymusiclooper in powershell BEFORE running the command below </pre>
+- Then run this long commmand all at once in powershell
+- Make sure your powershell is elevated aka Run as administrator 
+- Run these commands from wherever you want to install pymusiclooper 
+- i.e. run cd C:\Users\"YourUsernameHere"\Documents\pymusiclooper in powershell BEFORE running the command below 
 ```sh
 choco install ffmpeg-full python git -y ; refreshenv ; pip install yt-dlp --upgrade build hatchling ; git clone https://github.com/lucyluluuuu/PyMusicLooper.git ; cd PyMusicLooper ; python -m build ; pip install --force-reinstall dist/pymusiclooper-*.whl
 ```
-<pre> Install K-Lite Codec Pack. It's probably fine without it but having codecs up to date never hurts </pre>
-<pre> Run the curl.exe command in an elevated powershell </pre>
+- Install K-Lite Codec Pack. It's probably fine without it but having codecs up to date never hurts </pre>
+- Run the curl.exe command in an elevated powershell </pre>
 ```sh
 curl.exe -L "https://files2.codecguide.com/beta/K-Lite_Codec_Pack_1918_Full.exe" -o "$env:TEMP\klite.exe"
 Start-Process "$env:TEMP\klite.exe" -ArgumentList "/verysilent" -Wait
 ```
-<pre> Run refreshenv and then you should be able to run pymusiclooper </pre>
+- Run refreshenv and then you should be able to run pymusiclooper -
 
 ## Available Commands
 
 ![pymusiclooper --help](https://github.com/arkrow/PyMusicLooper/raw/master/img/pymusiclooper.svg)
 
-<pre> further help and options can be found in each subcommand's help message (e.g. `pymusiclooper export-points --help`); </pre>
-<pre> all commands and their `--help` message can be seen in [CLI_README.md](https://github.com/arkrow/PyMusicLooper/blob/master/CLI_README.md) </pre>
+ further help and options can be found in each subcommand's help message (e.g. `pymusiclooper export-points --help`); </pre>
+ all commands and their `--help` message can be seen in [CLI_README.md](https://github.com/arkrow/PyMusicLooper/blob/master/CLI_README.md) </pre>
 
-<pre> Using the interactive `-i` option is highly recommended, since the automatically chosen "best" loop point may not necessarily be the best one perceptually. </pre>
-<pre> As such, it is shown in all the examples. Can be disabled if the `-i` flag is omitted. Interactive mode is also available when batch processing. </pre>
+ Using the interactive `-i` option is highly recommended, since the automatically chosen "best" loop point may not necessarily be the best one perceptually. </pre>
+ As such, it is shown in all the examples. Can be disabled if the `-i` flag is omitted. Interactive mode is also available when batch processing. </pre>
 
 ## Example Usage
 
