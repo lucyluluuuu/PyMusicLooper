@@ -9,9 +9,11 @@ The following software must be installed for `pymusiclooper` to function correct
 
 # First install Chocolatey with this powershell command
 # Make sure your powershell is elevated aka Run as administrator
+
 ```sh
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 ```
+
 # Then run this long commmand all at once in powershell
 # Make sure your powershell is elevated aka Run as administrator
 # Run these commands from wherever you want to install pymusiclooper
@@ -21,10 +23,12 @@ choco install ffmpeg-full python git -y ; refreshenv ; pip install yt-dlp --upgr
 ```
 # Install K-Lite Codec Pack. It's probably fine without it but having codecs up to date never hurts
 # Run the curl.exe command in an elevated powershell
+
 ```sh
 curl.exe -L "https://files2.codecguide.com/beta/K-Lite_Codec_Pack_1918_Full.exe" -o "$env:TEMP\klite.exe"
 Start-Process "$env:TEMP\klite.exe" -ArgumentList "/verysilent" -Wait
 ```
+
 # Run refreshenv and then you should be able to run pymusiclooper
 
 ## Available Commands
