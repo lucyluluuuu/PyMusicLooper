@@ -6,9 +6,9 @@
 - [ffmpeg](https://ffmpeg.org/download.html):
 - [yt-dlp](https://github.com/yt-dlp/yt-dlp)) 
 
-                                              required for loading audio from youtube (or any stream supported by [yt-dlp](https://github.com/yt-dlp/yt-dlp)) 
-                                              and adds support for loading additional audio formats and codecs such as M4A/AAC, Apple Lossless (ALAC), WMA, ATRAC (.at9),
-                                              etc. A full list can be found at [ffmpeg's documentation](https://www.ffmpeg.org/general.html#Audio-Codecs). If the                                                          aforementioned features are not required, can be skipped.
+  required for loading audio from youtube (or any stream supported by [yt-dlp](https://github.com/yt-dlp/yt-dlp)) 
+  and adds support for loading additional audio formats and codecs such as M4A/AAC, Apple Lossless (ALAC), WMA, ATRAC (.at9),
+  etc. A full list can be found at [ffmpeg's documentation](https://www.ffmpeg.org/general.html#Audio-Codecs). If the                                                          aforementioned features are not required, can be skipped.
 
 ## Installation
 
